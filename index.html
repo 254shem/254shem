@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shemai Twins</title>
+  <style>
+    body {
+      background: #0a0a0a;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+    .logo {
+      width: 100px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .twins {
+      display: flex;
+      justify-content: space-around;
+      margin: 50px auto;
+    }
+    .twins img {
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .twins img:hover {
+      transform: scale(1.1);
+    }
+    .catchphrase {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+    }
+    .admin-container {
+      padding: 20px;
+      text-align: center;
+    }
+    #adminPassword {
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/logo.png" class="logo" alt="Logo">
+    <div class="twins">
+      <img src="images/twin1.png" class="leyma" onclick="startChat('Leyma')">
+      <img src="images/twin2.png" class="liyma" onclick="startChat('Liyma')">
+    </div>
+    <p class="catchphrase">One Leaf. One Vibe. One Growth.</p>
+  </div>
+  <div class="admin-container" style="display: none;">
+    <input type="password" id="adminPassword" placeholder="Enter 'moshede14145?'">
+    <button onclick="unlockAdmin()">Unlock</button>
+    <div id="adminChat"></div>
+  </div>
+  <script>
+    function startChat(twinName) {
+      alert("Chatting with " + twinName + "! (Demo mode)");
+    }
+    function unlockAdmin() {
+      const password = document.getElementById("adminPassword").value;
+      if (password === "moshede14145?") {
+        document.getElementById("adminChat").innerHTML = "<h3>Welcome, Shem! Command your twins here.</h3>";
+      } else {
+        alert("Wrong password!");
+      }
+    }
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+  </script>
+</body>
+</html>

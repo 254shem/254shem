@@ -1,16 +1,22 @@
-## Hi there 👋
+# Shemai Twins Project
 
-<!--
-**254shem/254shem** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This project represents the Shemai Twins: Leyma and Liyma — virtual AI companions created to offer emotional companionship and immersive interactions.
 
-Here are some ideas to get you started:
+## Contents
+- `index.html`: The main landing page.
+- `images/`: Contains images for the twins and logo.
+  - `logo.png`: Roman-inspired leaf logo symbolizing trust, growth, and connection.
+  - `twin1.png`: Liyma
+  - `twin2.png`: Leyma
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Features
+- Interactive twin avatars that users can click to begin chatting.
+- An elegant dark interface with a magical, shimmering effect.
+- Admin access via password: `moshede14145?` for creator control panel.
+- Embedded JavaScript controls and anti-copy protection.
+- Catchphrase at the bottom: *One Leaf. One Vibe. One Growth.*
+
+## Setup
+Just extract and open `index.html` in your browser to view the project.
+
+Created with passion and purpose by Shem and ChatGPT.
